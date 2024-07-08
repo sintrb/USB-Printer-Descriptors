@@ -493,3 +493,73 @@ DEVICE ID 20d1:7007 on Bus 020 Address 031 =================
        wMaxPacketSize   :   0x40 (64 bytes)
        bInterval        :    0x6
 ```
+
+------
+
+
+#### 佳博-GP-31230TUD
+
+标签打印机
+
+支持：蓝牙、USB
+
+说明：可以对0x1端口写入TSPL指令
+
+##### 照片
+![](imgs/佳博-GP-31230TUD-1.jpg)
+![](imgs/佳博-GP-31230TUD-2.jpg)
+
+
+##### 描述符
+
+```plain
+DEVICE ID 0471:0055 on Bus 020 Address 009 =================
+ bLength                :   0x12 (18 bytes)
+ bDescriptorType        :    0x1 Device
+ bcdUSB                 :  0x200 USB 2.0
+ bDeviceClass           :    0x0 Specified at interface
+ bDeviceSubClass        :    0x0
+ bDeviceProtocol        :    0x0
+ bMaxPacketSize0        :   0x40 (64 bytes)
+ idVendor               : 0x0471
+ idProduct              : 0x0055
+ bcdDevice              :  0x200 Device 2.0
+ iManufacturer          :    0x1 Zhuhai Howbest Label Printer Co.,Ltd.
+ iProduct               :    0x2 Gprinter USB Printer
+ iSerialNumber          :    0x3 0002AA000000
+ bNumConfigurations     :    0x1
+  CONFIGURATION 1: 100 mA ==================================
+   bLength              :    0x9 (9 bytes)
+   bDescriptorType      :    0x2 Configuration
+   wTotalLength         :   0x20 (32 bytes)
+   bNumInterfaces       :    0x1
+   bConfigurationValue  :    0x1
+   iConfiguration       :    0x0
+   bmAttributes         :   0xc0 Self Powered
+   bMaxPower            :   0x32 (100 mA)
+    INTERFACE 0: Printer ===================================
+     bLength            :    0x9 (9 bytes)
+     bDescriptorType    :    0x4 Interface
+     bInterfaceNumber   :    0x0
+     bAlternateSetting  :    0x0
+     bNumEndpoints      :    0x2
+     bInterfaceClass    :    0x7 Printer
+     bInterfaceSubClass :    0x1
+     bInterfaceProtocol :    0x2
+     iInterface         :    0x0
+      ENDPOINT 0x1: Bulk OUT ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :    0x1 OUT
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+      ENDPOINT 0x81: Bulk IN ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :   0x81 IN
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+```
+
