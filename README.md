@@ -499,7 +499,7 @@ DEVICE ID 20d1:7007 on Bus 020 Address 031 =================
 
 #### 佳博-GP-31230TUD
 
-标签打印机
+标签打印机 外供电
 
 支持：蓝牙、USB
 
@@ -558,6 +558,73 @@ DEVICE ID 0471:0055 on Bus 020 Address 009 =================
        bLength          :    0x7 (7 bytes)
        bDescriptorType  :    0x5 Endpoint
        bEndpointAddress :   0x81 IN
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+```
+
+
+#### 芯烨-XP-480B
+
+标签打印机 外供电
+
+支持：蓝牙、USB
+
+说明：可以对0x1端口写入TSPL指令
+
+##### 照片
+![](imgs/芯烨-XP-480B-1.jpg)
+![](imgs/芯烨-XP-480B-2.jpg)
+
+
+##### 描述符
+
+```plain
+DEVICE ID 2d37:81f7 on Bus 001 Address 006 =================
+ bLength                :   0x12 (18 bytes)
+ bDescriptorType        :    0x1 Device
+ bcdUSB                 :  0x200 USB 2.0
+ bDeviceClass           :    0x0 Specified at interface
+ bDeviceSubClass        :    0x0
+ bDeviceProtocol        :    0x0
+ bMaxPacketSize0        :   0x40 (64 bytes)
+ idVendor               : 0x2d37
+ idProduct              : 0x81f7
+ bcdDevice              :  0x100 Device 1.0
+ iManufacturer          :    0x1 Xprinter
+ iProduct               :    0x2 XP-480B
+ iSerialNumber          :    0x3 S480BBG258290234
+ bNumConfigurations     :    0x1
+  CONFIGURATION 1: 0 mA ====================================
+   bLength              :    0x9 (9 bytes)
+   bDescriptorType      :    0x2 Configuration
+   wTotalLength         :   0x20 (32 bytes)
+   bNumInterfaces       :    0x1
+   bConfigurationValue  :    0x1
+   iConfiguration       :    0x0
+   bmAttributes         :   0xc0 Self Powered
+   bMaxPower            :    0x0 (0 mA)
+    INTERFACE 0: Printer ===================================
+     bLength            :    0x9 (9 bytes)
+     bDescriptorType    :    0x4 Interface
+     bInterfaceNumber   :    0x0
+     bAlternateSetting  :    0x0
+     bNumEndpoints      :    0x2
+     bInterfaceClass    :    0x7 Printer
+     bInterfaceSubClass :    0x1
+     bInterfaceProtocol :    0x2
+     iInterface         :    0x0
+      ENDPOINT 0x1: Bulk OUT ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :    0x1 OUT
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+      ENDPOINT 0x82: Bulk IN ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :   0x82 IN
        bmAttributes     :    0x2 Bulk
        wMaxPacketSize   :   0x40 (64 bytes)
        bInterval        :    0x0
