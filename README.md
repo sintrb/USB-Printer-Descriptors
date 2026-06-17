@@ -630,3 +630,71 @@ DEVICE ID 2d37:81f7 on Bus 001 Address 006 =================
        bInterval        :    0x0
 ```
 
+
+
+#### 汉印-HPRT-N31
+
+标签打印机 外供电
+
+支持：USB
+
+说明：可以对0x2端口写入TSPL指令，但仅对BITMAP指令有效，难道是需要都转为位图进行打印？
+
+##### 照片
+![](imgs/汉印-HPRT-N31-1.jpg)
+![](imgs/汉印-HPRT-N31-2.jpg)
+
+
+##### 描述符
+
+```plain
+DEVICE ID 2aaf:9007 on Bus 001 Address 004 =================
+ bLength                :   0x12 (18 bytes)
+ bDescriptorType        :    0x1 Device
+ bcdUSB                 :  0x200 USB 2.0
+ bDeviceClass           :    0x0 Specified at interface
+ bDeviceSubClass        :    0x0
+ bDeviceProtocol        :    0x0
+ bMaxPacketSize0        :    0x8 (8 bytes)
+ idVendor               : 0x2aaf
+ idProduct              : 0x9007
+ bcdDevice              :  0x100 Device 1.0
+ iManufacturer          :    0x1 HPRT
+ iProduct               :    0x2 N31
+ iSerialNumber          :    0x3 N3100022070563XXXXXXXXXXXXXXXXXX
+ bNumConfigurations     :    0x1
+  CONFIGURATION 1: 10 mA ===================================
+   bLength              :    0x9 (9 bytes)
+   bDescriptorType      :    0x2 Configuration
+   wTotalLength         :   0x20 (32 bytes)
+   bNumInterfaces       :    0x1
+   bConfigurationValue  :    0x1
+   iConfiguration       :    0x0
+   bmAttributes         :   0xc0 Self Powered
+   bMaxPower            :    0x5 (10 mA)
+    INTERFACE 0: Printer ===================================
+     bLength            :    0x9 (9 bytes)
+     bDescriptorType    :    0x4 Interface
+     bInterfaceNumber   :    0x0
+     bAlternateSetting  :    0x0
+     bNumEndpoints      :    0x2
+     bInterfaceClass    :    0x7 Printer
+     bInterfaceSubClass :    0x1
+     bInterfaceProtocol :    0x2
+     iInterface         :    0x0
+      ENDPOINT 0x2: Bulk OUT ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :    0x2 OUT
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+      ENDPOINT 0x82: Bulk IN ===============================
+       bLength          :    0x7 (7 bytes)
+       bDescriptorType  :    0x5 Endpoint
+       bEndpointAddress :   0x82 IN
+       bmAttributes     :    0x2 Bulk
+       wMaxPacketSize   :   0x40 (64 bytes)
+       bInterval        :    0x0
+```
+
